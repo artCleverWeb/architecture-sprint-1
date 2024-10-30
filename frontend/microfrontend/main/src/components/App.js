@@ -4,17 +4,17 @@ import Header from "./Header";
 import Main from "./Main";
 import Footer from "./Footer";
 import PopupWithForm from "./PopupWithForm";
-import ImagePopup from "./ImagePopup";
+import ImagePopup from "../../../places/src/components/ImagePopup";
 import api from "../utils/api";
 import { CurrentUserContext } from "../contexts/CurrentUserContext";
-import EditProfilePopup from "./EditProfilePopup";
-import EditAvatarPopup from "./EditAvatarPopup";
-import AddPlacePopup from "./AddPlacePopup";
-import Register from "./Register";
-import Login from "./Login";
-import InfoTooltip from "./InfoTooltip";
-import ProtectedRoute from "./ProtectedRoute";
-import * as auth from "../utils/auth.js";
+import EditProfilePopup from "../../../profile/src/components/EditProfilePopup";
+import EditAvatarPopup from "../../../profile/src/components/EditAvatarPopup";
+import AddPlacePopup from "../../../places/src/components/AddPlacePopup";
+import Register from "../../../auth/src/components/Register";
+import Login from "../../../auth/src/components/Login";
+import InfoTooltip from "../InfoTooltip";
+import ProtectedRoute from "../ProtectedRoute";
+
 
 function App() {
   const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] =
